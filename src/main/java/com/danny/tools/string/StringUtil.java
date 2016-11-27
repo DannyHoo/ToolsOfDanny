@@ -1,10 +1,14 @@
 package com.danny.tools.string;
 
 /**
- * @Author��chaoqiang.zhou
- * @date: 2016/10/13.
+ * @author huyuyang@lxfintech.com
+ * @Title: MapUtils
+ * @Copyright: Copyright (c) 2016
+ * @Description:
+ * @Company: lxjr.com
+ * @Created on 2016-11-27 22:52:48
  */
-public class StringUtils {
+public class StringUtil {
 
 
     public static void main(String[] args) {
@@ -13,9 +17,6 @@ public class StringUtils {
         System.out.println(validateParam(a,b));
 
     }
-
-
-
 
     public static boolean validateParam(String str1,String str2){
         if(str1==null||str2==null){
