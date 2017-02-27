@@ -18,7 +18,7 @@ public class ListUtils {
     /**
      * 通过List的size属性遍历
      */
-    public void goThroughByListSize(List<Object> list) {
+    public static void goThroughByListSize(List<Object> list) {
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
@@ -27,7 +27,7 @@ public class ListUtils {
     /**
      * 通过迭代遍历
      */
-    public void goThroughByIterator(List<Object> list) {
+    public static void goThroughByIterator(List<Object> list) {
         Iterator<Object> iterator = list.iterator();
         while (iterator.hasNext()) {
             System.out.println();
@@ -37,10 +37,12 @@ public class ListUtils {
     /**
      * 通过Foreach遍历
      */
-    public void goThroughByForeach(List<Object> list) {
+    public static void goThroughByForeach(List<Object> list) {
         for (Object obj : list) {
             System.out.println(obj);
         }
     }
     /*================================List遍历-end================================*/
+
+
 }

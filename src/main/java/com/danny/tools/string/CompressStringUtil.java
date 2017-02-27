@@ -24,7 +24,7 @@ public class CompressStringUtil {
         baseStr.append("DannyHooDannyHooDannyHooD%#annyHooDan$nyHooDannyHooDannyHooDannyHooDannyHoo");
         baseStr.append("DannyHooDannyHooDannyHooDannyHooDannyHooDannyHooDannyHooDannyHooDannyHoo");
         baseStr.append("DannyHooDannyHooDanny3HooDannyHooDan66nyHooDannyHooDann6yHooDannyHooDannyHoo");
-        System.out.println("zip:\n"+gzip(baseStr.toString()));
+        System.out.println("zip:\n" + gzip(baseStr.toString()));
     }
 
     /**

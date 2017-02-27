@@ -21,7 +21,7 @@ public class MapUtils<T> {
      * 通过Map的entrySet来循环遍历
      * @param map
      */
-    public void goThroughByEntries(Map<String,Object> map){
+    public static void goThroughByEntries(Map<String,Object> map){
         for(Map.Entry<String,Object> entry:map.entrySet()){
             System.out.println("key="+entry.getKey()+",value="+entry.getValue());
         }
@@ -32,7 +32,7 @@ public class MapUtils<T> {
      * 该方法比entrySet遍历在性能上稍好（快了10%），而且代码更加干净。
      * @param map
      */
-    public void goThroughByKeySet(Map<String,Object> map){
+    public static void goThroughByKeySet(Map<String,Object> map){
         for(String str:map.keySet()){
             Object object=map.get(str);//注意如果在这里取value效率会低一些，遍历完之后又重新hash查找了一遍
             System.out.println("key="+str);
@@ -44,7 +44,7 @@ public class MapUtils<T> {
      * 该方法比entrySet遍历在性能上稍好（快了10%），而且代码更加干净。
      * @param map
      */
-    public void goThroughByValues(Map<String,Object> map){
+    public static void goThroughByValues(Map<String,Object> map){
         for(Object object:map.values()){
             System.out.println("value="+object);
         }
@@ -54,7 +54,7 @@ public class MapUtils<T> {
      * 通过迭代器遍历
      * @param map
      */
-    public void goThroughByIterator(Map<String,Object> map){
+    public static void goThroughByIterator(Map<String,Object> map){
         Iterator<Map.Entry<String,Object>> iterator=map.entrySet().iterator();
         while(iterator.hasNext()){
             Map.Entry<String,Object> entry=iterator.next();

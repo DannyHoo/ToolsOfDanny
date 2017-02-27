@@ -18,7 +18,7 @@ public class SetUtils<T> {
     /**
      * 通过迭代遍历
      */
-    public void goThroughByIterator(Set<Object> set){
+    public static void goThroughByIterator(Set<Object> set){
         Iterator<Object> it=set.iterator();
         while (it.hasNext()) {
             Object obj = it.next();
@@ -29,7 +29,7 @@ public class SetUtils<T> {
     /**
      * 通过For循环遍历
      */
-    public void goThroughByForeach(Set<Object> set){
+    public static void goThroughByForeach(Set<Object> set){
         for (Object obj:set) {
             System.out.println(obj);
         }
