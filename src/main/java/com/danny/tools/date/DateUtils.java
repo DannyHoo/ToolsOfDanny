@@ -97,6 +97,7 @@ public class DateUtils {
         System.out.println("start=" + preDate);
         System.out.println("end=" + nextDate);
         System.out.println(getNextMonthToday(new Date()));
+        System.out.println();
     }
 
 }

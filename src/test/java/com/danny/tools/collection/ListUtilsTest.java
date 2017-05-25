@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -15,6 +16,26 @@ import java.util.List;
  * @Created on 2016-12-06 14:11:05
  */
 public class ListUtilsTest {
+
+    @Test
+    public void listRemoveTest(){
+        List<Person> personList=new ArrayList<Person>();
+        personList.add(new Person("adf"));
+        personList.add(new Person("danny"));
+        personList.add(new Person("dannyhoo"));
+        personList.add(new Person("dgag"));
+
+        Iterator<Person> it = personList.iterator();
+        while(it.hasNext()){
+            Person x = it.next();
+            if(x.getName().contains("danny")){
+                it.remove();
+            }
+        }
+        for (Person person:personList){
+            System.out.println(person.getName());
+        }
+    }
 
     @Test
     public void testGoThroughByListSize(){
@@ -38,4 +59,20 @@ public class ListUtilsTest {
         return object;
     }
 
+}
+class Person{
+    public Person(String name) {
+        this.name = name;
+    }
+
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public Person setName(String name) {
+        this.name = name;
+        return this;
+    }
 }

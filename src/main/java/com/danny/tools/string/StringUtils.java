@@ -14,7 +14,11 @@ public class StringUtils {
         String[] strs = str.split(" ");
         String idCard = strs[0];
         String name = str.replace(idCard, "");
-        System.out.println(getSex("女"));
+        //System.out.println(getSex("女"));
+
+        String s1="130582************";
+        String s2="玉洋";
+        System.out.println(s1.substring(0,6));
     }
 
     private static int getSex(String sex) {
