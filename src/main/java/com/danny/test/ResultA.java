@@ -1,5 +1,7 @@
 package com.danny.test;
 
+import java.util.Date;
+
 /**
  * @author huyuyang@lxfintech.com
  * @Title: ResultA
@@ -48,5 +50,14 @@ public class ResultA<T> {
     public ResultA setResultEnum(ResultEnum resultEnum) {
         this.resultEnum = resultEnum;
         return this;
+    }
+
+
+    public static void main(String[] args) {
+        Date date = new Date();
+        for (int i=0;i<200;i++){
+            System.out.println("{\"beginTime\":\""+(date.getTime()/1000*1000+i*1000)+ "\", \"callDuration\": \"102\", \"callType\": \"主叫\", \"otherNum\": \"18468052026\", \"homeArea\": \"北京\", \"landType\": \"国内长途\", \"totalFee\": \"0.00\"},");
+        }
+
     }
 }

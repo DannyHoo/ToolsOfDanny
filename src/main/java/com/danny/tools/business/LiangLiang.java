@@ -14,7 +14,11 @@ import java.util.Random;
  */
 public class LiangLiang {
     public static void main(String[] args) {
-        getNums();
+
+    }
+
+    public static void test_ailing(long param1,long param2){
+        System.out.println(param1+" "+param2);
     }
 
     public static double[] getNums() {
