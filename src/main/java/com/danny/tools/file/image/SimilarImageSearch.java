@@ -20,8 +20,8 @@ public class SimilarImageSearch {
      */
     public static void main(String[] args) {
         List<String> hashCodes = new ArrayList<String>();
-
-        String filename = ImageHelper.path + "/images/";
+        System.out.println(System.getProperty("user.dir"));
+        String filename = ImageHelper.path + "/src/main/resources/images/";
         String hashCode = null;
 
         for (int i = 0; i < 5; i++) {
