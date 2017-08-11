@@ -3,9 +3,7 @@ package com.danny.tools.collection;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author huyuyang@lxfintech.com
@@ -16,6 +14,31 @@ import java.util.List;
  * @Created on 2016-12-06 14:11:05
  */
 public class ListUtilsTest {
+
+    @Test
+    public void multipleTest(){
+        List<Person> personList=new ArrayList<>();
+        Set<Person> personSet=new HashSet<Person>();
+
+        Person person=new Person("1");
+        personList.add(person);
+        person.setName("2");
+        personList.add(person);
+        person.setName("3");
+        personList.add(person);
+
+        personSet.addAll(personList);
+        System.out.println(person);
+
+        /*Person person=new Person("1");
+        personSet.add(person);
+        person.setName("2");
+        personSet.add(person);
+        person.setName("3");
+        personSet.add(person);
+        System.out.println(personSet);*/
+
+    }
 
     @Test
     public void listRemoveTest(){

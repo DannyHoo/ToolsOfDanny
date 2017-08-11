@@ -1850,19 +1850,6 @@
               "receiver_addr": "北京",
               "receiver_phone": "",
               "receiver_name": "胡丹尼"
-            },
-            {
-              "province": null,
-              "city": "北京海淀区四环到五环之间",
-              "update_time": "2016-11-02 14:23:56",
-              "receiver_cell_phone": "139****9042",
-              "zipcode": null,
-              "receiver_title": null,
-              "payment_type": null,
-              "is_default_address": false,
-              "receiver_addr": "北京海淀区四环到五环之间北京市海淀区郦城常青园二区6号楼2单元1201室",
-              "receiver_phone": "",
-              "receiver_name": "张*"
             }
           ],
           "juid": ""

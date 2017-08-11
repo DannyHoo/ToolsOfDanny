@@ -3,6 +3,7 @@ package com.danny.tools.file.image;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.net.URL;
 
 /**
  * @author huyuyang@lxfintech.com
@@ -129,7 +130,12 @@ public class PicturesCompare {
     }
 
     public static void main(String[] args) {
-        PicturesCompare.compareImage("/Users/dannyhoo/Desktop/SimilarImageSearch/images/example4.jpg",
-                "/Users/dannyhoo/Desktop/SimilarImageSearch/images/example5.jpg");
+        System.out.println( System.getProperty("user.dir"));
+        ClassLoader classLoader = PicturesCompare.class.getClassLoader();
+        URL url = classLoader.getResource("");
+        String filePath = new StringBuffer(url.getPath()).append("images/").toString();
+        System.out.println(filePath);
+        PicturesCompare.compareImage(filePath+"example4.jpg",
+                filePath+"example5.jpg");
     }
 }

@@ -15,6 +15,7 @@ import java.util.Date;
  * @Created on 2017-01-12 17:58:52
  */
 public class DateUtils {
+
     public static String getNextMonthDate(String date) {
         String resultString;
         try {

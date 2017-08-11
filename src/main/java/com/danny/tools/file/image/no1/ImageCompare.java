@@ -35,13 +35,27 @@ public class ImageCompare {
         // 获取灰度像素的比较数组（即图像指纹序列）
         pixels = getPixelDeviateWeightsArray(pixels, averageColor);*/
 
-        int[] pixels1 = getHanmingDistance_TEMP(ImageHelper.path + "/src/main/resources/images/example2.jpg");
-        int[] pixels2 = getHanmingDistance_TEMP(ImageHelper.path + "/src/main/resources/images/source.jpg");
+        int[] pixels1 = getHanmingDistance_TEMP(ImageHelper.path + "/src/main/resources/images/example4.jpg");
+        int[] pixels2 = getHanmingDistance_TEMP(ImageHelper.path + "/src/main/resources/images/example5.jpg");
         // 获取两个图的汉明距离（假设另一个图也已经按上面步骤得到灰度比较数组）
         int hammingDistance = getHammingDistance(pixels1, pixels2);
         // 通过汉明距离计算相似度，取值范围 [0.0, 1.0]
         double similarity = calSimilarity(hammingDistance);
         System.out.println(similarity);
+    }
+
+    /**
+     * 获得两张图片的相似度
+     * @param filePath1
+     * @param filePath2
+     * @return
+     * @throws IOException
+     */
+    public static double getSimilarity(String filePath1,String filePath2) throws IOException {
+        int[] pixels1 = getHanmingDistance_TEMP(filePath1);
+        int[] pixels2 = getHanmingDistance_TEMP(filePath2);
+        int hammingDistance = getHammingDistance(pixels1, pixels2);
+        return hammingDistance;
     }
 
     public static int[] getHanmingDistance_TEMP(String filePath) throws IOException {

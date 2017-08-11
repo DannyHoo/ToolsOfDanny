@@ -23,7 +23,7 @@ public class DictionarySort {
     public static void main(String[] args) {
         testSort();
         try {
-            System.out.println(EncoderByMd5("1234567890"+"1496372865000"+"80f638826343411098978e6563509ee4"));
+            System.out.println(EncoderByMd5("80f638826343411098978e656351234567890"+"1496372865000"+"80f638826343411098978e6563509ee4"));
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         } catch (UnsupportedEncodingException e) {
@@ -33,7 +33,7 @@ public class DictionarySort {
 
     public static void testSort() {
         ArrayList<String> arl = new ArrayList<String>();
-        /*arl.add("DD");
+        arl.add("DD");
         arl.add("aB");
         arl.add("E");
         arl.add("f");
@@ -46,7 +46,7 @@ public class DictionarySort {
         arl.add("上海");
         arl.add("湖南");
         arl.add("河南");
-        arl.add("河北");*/
+        arl.add("河北");
         arl.add("80f638826343411098978e6563509ee4");
         arl.add("1496372865000");
         arl.add("1234567890");
